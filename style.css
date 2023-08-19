@@ -1,0 +1,294 @@
+/* Few entra fonts */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Outfit&family=Red+Hat+Text&family=Space+Mono&display=swap");
+/* Removing default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Aligning the box in the center and giving it a bg-color with few font-family */
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Red Hat Text", sans-serif;
+  font-family: "Space Mono", monospace;
+  background-color: #141d2f;
+}
+/* Styling the above part of the box */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+/* Styling the search bar */
+.search_container {
+  height: 70px;
+  width: 700px;
+  background-color: #1e2a47;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+.search input {
+  height: 50px;
+  font-size: 30px;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  background-color: #1e2a47;
+  color: white;
+}
+.search img {
+  margin-left: 40px;
+  height: 30px;
+}
+.userSearch {
+  margin-right: 40px;
+  width: 140px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  background-color: #0079ff;
+  color: white;
+  font-size: 30px;
+}
+/* Styling the results box */
+.userinfo_container {
+  height: 429px;
+  width: 700px;
+  background-color: #1e2a47;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo_container .userimg {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 1px solid #0079ff;
+}
+.userinfo_container .userimg img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.userinfo_result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 650px;
+  margin-top: 10px;
+}
+/* Styling the name and join date part */
+.githubinfo {
+  width: 500px;
+  height: 100%;
+  position: relative;
+}
+.name {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.githubname {
+  font-size: 18px;
+  color: #0079ff;
+}
+.githubjoindate {
+  color: #0079ff;
+  font-size: 18px;
+}
+/* styling the part which says about the user i.e bio, repos, followers */
+.userinfo_facts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 650px;
+}
+.userinfo_bio {
+  width: 500px;
+  height: 70px;
+  color: #fff;
+  font-size: 15px;
+  margin-top: -10px;
+}
+.userinfo_repo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #141d2f;
+  height: 90px;
+  width: 500px;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+}
+.fact_repo_amt,
+.fact_followers_amt,
+.fact_following_amt { 
+  font-weight: 800;
+  text-align: center;
+}
+/* Styling the social part */
+.githubSocial {
+  display: grid;
+  grid-template-columns: 240px 240px;
+  color: #fff;
+  margin-top: 30px;
+}
+.website img {
+  cursor: pointer;
+}
+.location img,
+.twitter img,
+.website img,
+.comapny img {
+  margin-right: 10px;
+}
+/* Making it responsive for ipad */
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header,
+  .search_container {
+    width: 650px;
+  }
+  .search input {
+    margin-left: 0px;
+  }
+  .search img {
+    margin-left: 30px;
+  }
+  .userSearch {
+    margin-right: 30px;
+  }
+  .userinfo_container {
+    width: 650px;
+    height: 420px;
+  }
+  .userinfo_result,
+  .userinfo_facts,
+  .githubSocial {
+    width: 600px;
+  }
+  .githubinfo {
+    width: 470px;
+  }
+  .userinfo_bio {
+    width: 470px;
+  }
+  .githubSocial {
+    width: 470px;
+  }
+}
+
+/* Making it responsive for mobile */
+@media screen and (max-width: 425px) {
+  header,
+  .search_container {
+    width: 327px;
+    margin-left: 10px;
+    height: 60px;
+  }
+  .search input {
+    width: 160px;
+    font-size: 20px;
+  }
+
+  .userSearch {
+    width: 84px;
+    height: 46px;
+    font-size: 20px;
+  }
+
+  .userinfo_container {
+    margin-top: 10px;
+    height: 520px;
+    width: 327px;
+    margin-bottom: 10px;
+  }
+  .userinfo_facts{
+    width: 279px;
+  }
+  .userinfo_result {
+    width: 300px;
+  }
+
+  .userinfo_container .userimg {
+    width: 80px;
+    height: 80px;
+    border-radius: 117px;
+  }
+
+  .userinfo_container .userimg img {
+    width: 80px;
+    height: 80px;
+    border-radius: 117px;
+  }
+
+  .githubinfo {
+    width: 200px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .githubname {
+    margin-top: -5px;
+  }
+
+  .githubjoindate {
+    top: 48px;
+  }
+ 
+  .githubname a,
+  .githubjoindate,
+  .userinfo_bio {
+    font-size: 12px;
+  }
+  .userinfo_bio {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    width: fit-content;
+  }
+
+  .userinfo_repo {
+    width: 279px;
+    font-size: 14px;
+  }
+
+  .githubSocial {
+    grid-template-columns: 279px;
+    justify-content: flex-end;
+  }
+  .fact_repo_amt,
+  .fact_followers_amt,
+  .fact_following_amt {
+    text-align: center;
+  }
+}

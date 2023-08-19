@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GitFinder</title>
+</head>
+<body>
+    <header>
+        <h1 class="webname">gitFinder</h1>
+    </header>
+    <div class="search_container">
+        <div class="search">
+            <img src="images/search.svg">
+            <input type="text" class="searchTxt" placeholder="Search Github username"> 
+        </div>
+        <div class="btn"><button class="userSearch">Search</button></div>
+    </div>
+    <div class="userinfo_container">
+        <div class="userinfo_result">
+            <div class="userimg"></div>
+            <div class="githubinfo">
+                <div class="name">Name</div>
+                <div class="githubname">@<a class="githubusername">GitHubUserName</a></div> 
+                <div class="githubjoindate">Joined: <a class="date"></a></div>
+            </div>
+        </div>
+
+        <div class="userinfo_facts">
+            <div class="userinfo_bio">Github bio</div>
+            <div class="userinfo_repo">
+                <div class="repos">
+                    <div class="fact_repo">Repository</div>
+                    <div class="fact_repo_amt">--</div>
+                </div>
+                <div class="followers">
+                    <div class="fact_followers">Followers</div>
+                    <div class="fact_followers_amt">--</div>
+                </div>
+                <div class="following">
+                    <div class="fact_following">Following</div>
+                    <div class="fact_following_amt">--</div>
+                </div>
+            </div>
+            
+            <div class="githubSocial">
+                <div class="location">
+                  <img src="images/location.svg"/>
+                  <p class="locations">Location</p>
+                </div>
+                <div class="twitter">
+                  <img src="images/twitter.svg"/>
+                  <p class="twit">Twitter</p>
+                </div>
+                <div class="comapny">
+                    <img src="images/company.svg"/>
+                    <p class="companies">Company</p>
+                  </div>
+                <div class="website">
+                  <img class="blogImg" src="images/website.svg"/>
+                  <p class="websites">Blog</p>
+                </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
